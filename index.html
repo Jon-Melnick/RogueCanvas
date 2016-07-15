@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>rogueCanvas</title>
+    <link rel="stylesheet" href="application.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="page">
+      <h1>RogueCanvas</h1>
+      <div class="container">
+
+        <div class="game">
+          <img class="game-border" src="./graphics/border.png"/>
+          <canvas id="canvas1"></canvas>
+          <canvas id="canvasDmg"></canvas>
+          <div id="intro-outro">
+            <canvas id="canvasIntroOutro"></canvas>
+            <div class="">
+              <h1>RogueCanvas</h1>
+              <p id="txt">
+
+              </p>
+            </div>
+            <button id="selectButton" type="button"> ready to play </button>
+          </div>
+          <div id="overlay">
+            <div>
+              <h1>RogueCanvas</h1>
+              <h4>
+                <p>Why the name? It is a RogueLike inspired game built rending all the fun action using HTML Canvas. The rest of this game is built using plain JavaScript. Each map is randomly generated using concepts from Conways Game of Life. After which I use a function to 'flood' the explorable cave and if it is not big enough (atleast 800 tiles to step on) then it will rerender a new map. I hope you enjoy it as much as I enjoy making it.</p>
+
+                <p>Thanks for playing! Now go kill me some creatures!</p>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="ui">
+          <canvas id="canvasUI"></canvas>
+          <div class="minimap">
+          </div>
+          <div class="inventory">
+            <div id="slot1">
+            </div>
+            <div id="slot2">
+
+            </div>
+            <div id="slot3">
+
+            </div>
+            <div class="slot4">
+
+            </div>
+            <div class=slot5"">
+
+            </div>
+            <div class="slot6">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
+    <script type="application/javascript" src="lib/bundle.js"></script>
+  </body>
+</html>
