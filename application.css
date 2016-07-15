@@ -287,11 +287,11 @@ body {
      width:300px;
      margin: 100px auto;
      background-color: rgba(0, 0, 0, 0.8);
-     border:2px solid #fff;
+     border:2px solid #84817f;
      padding:5px;
      text-align:center;
-     height: 500px;
-     width: 490px;
+     height: 520px;
+     width: 510px;
      z-index: 1001;
      color: white;
      position: absolute;
@@ -307,6 +307,13 @@ body {
   height: 50px;
   width: 100px;
   cursor: pointer;
+  background-image: url('./graphics/btn.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#selectButton{
+  font-family: 'Press Start 2P'
+
 }
 
 
