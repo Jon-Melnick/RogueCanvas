@@ -25,9 +25,9 @@ Movement is made using the standard arrow keys of a keyboard and to heal (if you
 With each hit on you or each kill will change the bars for the respective attribute. The minimap updates as you move, showing where you have explored but covering it in a fog of war. This is useful so you can tell if you've been done a certain path before you move on, or to remember where the entrance was or exit, if you have discovered it. Any potion or monster that is not currently in your field of vision will stay hidden in the fog of war.
 
 
-## Behind the scenes
+# Behind the scenes
 
-#map generation
+## map generation
 
 Using a modified version of cellular automation, I have been able to randomly generate a cave map, meaning no two are the same. The map is first generated with a 40% chance for a space to be a wall but then its ran through a function 3 times that counts each space's neighbor that is a wall and decides if it will either stay a wall or become an open space. I found that three times resulted in a pretty decent cave structure.
 
@@ -35,7 +35,7 @@ After the cave interior has been created I close it off with a wall on all sides
 
 
 
-## Future Directions for the Project
+# Future Directions for the Project
 
 For now the enemies are running stupid. They only move if you get within 2 spaces of them, and at that point they will just follow you unless you are able to get them stuck around a corner. Not always as easy as it sounds. The plan is to use a tree algorithm to find the best path to the player and take it, that way they don't just get stuck. Also would like to maybe set up a field of vision for them, and random turning or steps. That way it could be possible to sneak up on them to deal double dmg for the first hit.
 
